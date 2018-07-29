@@ -18,12 +18,13 @@ function currentLine(LondonDeliLine) {
     return "The line is currently empty."
   };
 
-  const currentQueue = [];
+  const currentQueue = []
 
-  for (let queueIndex = 0; LondonDeliLine.length; queueIndex++) {
-    currentQueue.push(`${queueIndex +1} ${LondonDeliLine[queueIndex]}`)
-    }
+  for (let i = 0, l = LondonDeliLine.length; i < l; i++) {
+    currentQueue.push(`${i + 1}. ${l[i]}`)
+  }
 
-    return `The line is currently ${currentQueue.join(',')}`
+  return `The line is currently: ${currentQueue.join(', ')}`
+};
 
-}
+
