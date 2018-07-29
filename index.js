@@ -20,7 +20,7 @@ function currentLine(LondonDeliLine) {
 
   const currentQueue = []
 
-  for (let i = 0, l = LondonDeliLine.length; i < l; i++) {
+  for (let i = 0; i < LondonDeliLine; i++) {
     currentQueue.push(`${i + 1}. ${l[i]}`)
   }
 
